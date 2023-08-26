@@ -1,0 +1,997 @@
+@font-face {
+  font-family: American Typewriter;
+  src: url(/../assets/fonts/AmericanTypewriterBQ-Bold.otf) format("opentype");
+}
+
+/* line 38, app/assets/stylesheets/site/style.scss */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #0c0c0c;
+  background-color: #ffffff;
+}
+
+/* line 44, app/assets/stylesheets/site/style.scss */
+.layout_margin {
+  margin: 90px 0;
+}
+
+/* line 48, app/assets/stylesheets/site/style.scss */
+.layout_padding {
+  padding: 90px 0;
+}
+
+/* line 52, app/assets/stylesheets/site/style.scss */
+.layout_padding2 {
+  padding: 45px 0;
+}
+
+/* line 56, app/assets/stylesheets/site/style.scss */
+.layout_padding2-top {
+  padding-top: 45px;
+}
+
+/* line 60, app/assets/stylesheets/site/style.scss */
+.layout_padding2-bottom {
+  padding-bottom: 45px;
+}
+
+/* line 64, app/assets/stylesheets/site/style.scss */
+.layout_padding-top {
+  padding-top: 90px;
+}
+
+/* line 68, app/assets/stylesheets/site/style.scss */
+.layout_padding-bottom {
+  padding-bottom: 90px;
+}
+
+/* line 72, app/assets/stylesheets/site/style.scss */
+.heading_container {
+  display: flex;
+  align-items: center;
+}
+
+/* line 76, app/assets/stylesheets/site/style.scss */
+.heading_container h2 {
+  font-weight: bold;
+  color: #1d1e31;
+  position: relative;
+  text-transform: uppercase;
+}
+
+/* line 83, app/assets/stylesheets/site/style.scss */
+.heading_container hr {
+  margin: 0 10px;
+  border: none;
+  flex: 1;
+  max-width: 200px;
+  height: 3px;
+  background-color: #51b5ef;
+}
+
+/* line 94, app/assets/stylesheets/site/style.scss */
+.hero_next_section-margin {
+  margin-top: 100px;
+}
+
+/*header section*/
+/* line 101, app/assets/stylesheets/site/style.scss */
+.hero_area {
+  height: 100vh;
+  position: relative;
+}
+
+/* line 105, app/assets/stylesheets/site/style.scss */
+.hero_area::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18%;
+  min-width: 150px;
+  height: 100%;
+  background: linear-gradient(to right, #51b5ef, #436bf1);
+}
+
+/* line 121, app/assets/stylesheets/site/style.scss */
+.sub_page .hero_area {
+  height: auto;
+}
+
+/* line 124, app/assets/stylesheets/site/style.scss */
+.sub_page .hero_area::before {
+  width: 160px;
+}
+
+/* line 131, app/assets/stylesheets/site/style.scss */
+.header_section .container-fluid {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+/* line 136, app/assets/stylesheets/site/style.scss */
+.header_section .nav_container {
+  margin: 0 auto;
+}
+
+/* line 140, app/assets/stylesheets/site/style.scss */
+.custom_nav-container.navbar-expand-lg .navbar-nav .nav-link img {
+  width: 22px;
+  margin-right: 15px;
+}
+
+/* line 145, app/assets/stylesheets/site/style.scss */
+.custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0px 25px;
+  color: #fefeff;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+/* line 154, app/assets/stylesheets/site/style.scss */
+.custom_menu-btn {
+  z-index: 9;
+  position: absolute;
+  right: 5px;
+  top: 14px;
+}
+
+/* line 161, app/assets/stylesheets/site/style.scss */
+.custom_menu-btn button {
+  margin-top: 12px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+/* line 168, app/assets/stylesheets/site/style.scss */
+.custom_menu-btn span {
+  display: block;
+  width: 40px;
+  height: 4px;
+  background-color: #262626;
+  margin: 7px 0;
+  transition: all .3s;
+}
+
+/* line 180, app/assets/stylesheets/site/style.scss */
+.menu_btn-style button {
+  position: fixed;
+  right: 20px;
+  top: 14px;
+}
+
+/* line 185, app/assets/stylesheets/site/style.scss */
+.menu_btn-style button .s-1 {
+  transform: rotate(45deg) translateY(15.5px);
+}
+
+/* line 189, app/assets/stylesheets/site/style.scss */
+.menu_btn-style button .s-2 {
+  transform: translateX(100px);
+}
+
+/* line 193, app/assets/stylesheets/site/style.scss */
+.menu_btn-style button .s-3 {
+  transform: rotate(-45deg) translateY(-15.5px);
+}
+
+/* line 200, app/assets/stylesheets/site/style.scss */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  background-color: rgba(62, 103, 205, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+/* line 212, app/assets/stylesheets/site/style.scss */
+.overlay .closebtn {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  font-size: 60px;
+}
+
+/* line 219, app/assets/stylesheets/site/style.scss */
+.overlay a {
+  padding: 0px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+/* line 232, app/assets/stylesheets/site/style.scss */
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* line 240, app/assets/stylesheets/site/style.scss */
+.menu_width {
+  width: 100%;
+}
+
+/* line 246, app/assets/stylesheets/site/style.scss */
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+/* line 252, app/assets/stylesheets/site/style.scss */
+a:hover,
+a:focus {
+  color: initial;
+}
+
+/* line 257, app/assets/stylesheets/site/style.scss */
+.btn,
+.btn:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
+/* line 263, app/assets/stylesheets/site/style.scss */
+.custom_nav-container .nav_search-btn {
+  background-image: url(/assets/search-icon.png);
+  background-size: 18px;
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  border: none;
+  margin: 0 40px 0 15px;
+  background-position: center;
+}
+
+/* line 276, app/assets/stylesheets/site/style.scss */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-family: 'American Typewriter', sans-serif;
+}
+
+/* line 281, app/assets/stylesheets/site/style.scss */
+.navbar-brand img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+/* line 286, app/assets/stylesheets/site/style.scss */
+.navbar-brand span {
+  text-transform: uppercase;
+  font-size: 22px;
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+/* line 295, app/assets/stylesheets/site/style.scss */
+.custom_nav-container {
+  z-index: 99999;
+  padding: 15px 0;
+}
+
+/* line 300, app/assets/stylesheets/site/style.scss */
+.custom_nav-container .navbar-toggler {
+  outline: none;
+}
+
+/* line 304, app/assets/stylesheets/site/style.scss */
+.custom_nav-container .navbar-toggler .navbar-toggler-icon {
+  background-image: url(/assets/menu.png);
+  background-size: 55px;
+}
+
+/* line 309, app/assets/stylesheets/site/style.scss */
+.quote_btn-container a {
+  display: inline-block;
+  padding: 5px 15px;
+  background-color: #fc5d35;
+  color: #f7f7f7;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/*end header section*/
+/* line 321, app/assets/stylesheets/site/style.scss */
+.slider_section {
+  display: flex;
+  align-items: center;
+  height: calc(100% - 80px);
+  padding: 45px 0 90px 0;
+}
+
+/* line 328, app/assets/stylesheets/site/style.scss */
+.slider_section .side_heading {
+  position: absolute;
+  top: 45%;
+  right: 25px;
+  transform: translateY(-50%);
+}
+
+/* line 334, app/assets/stylesheets/site/style.scss */
+.slider_section .side_heading h5 {
+  writing-mode: tb-rl;
+  text-orientation: upright;
+  font-family: 'American Typewriter', sans-serif;
+  font-size: 20px;
+}
+
+/* line 343, app/assets/stylesheets/site/style.scss */
+.slider_section .carousel {
+  position: unset;
+}
+
+/* line 347, app/assets/stylesheets/site/style.scss */
+.slider_section .col-md-5.offset-md-1 {
+  position: unset;
+}
+
+/* line 351, app/assets/stylesheets/site/style.scss */
+.slider_section .detail-box {
+  margin-top: 65px;
+  position: relative;
+}
+
+/* line 355, app/assets/stylesheets/site/style.scss */
+.slider_section .detail-box h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3.5rem;
+  font-family: 'American Typewriter', sans-serif;
+}
+
+/* line 363, app/assets/stylesheets/site/style.scss */
+.slider_section .detail-box .btn-box {
+  margin-top: 35px;
+}
+
+/* line 366, app/assets/stylesheets/site/style.scss */
+.slider_section .detail-box .btn-box a {
+  text-align: center;
+  text-transform: uppercase;
+  width: 180px;
+}
+
+/* line 372, app/assets/stylesheets/site/style.scss */
+.slider_section .detail-box .btn-box .btn-1 {
+  display: inline-block;
+  padding: 10px 0px;
+  background-color: #51b5ef;
+  color: #ffffff;
+  border: 1px solid #51b5ef;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+/* line 27, app/assets/stylesheets/site/style.scss */
+.slider_section .detail-box .btn-box .btn-1:hover {
+  background-color: transparent;
+  color: #51b5ef;
+}
+
+/* line 378, app/assets/stylesheets/site/style.scss */
+.slider_section .detail-box .btn-box .btn-2 {
+  display: inline-block;
+  padding: 10px 0px;
+  background-color: #262626;
+  color: #ffffff;
+  border: 1px solid #262626;
+  text-transform: uppercase;
+}
+
+/* line 27, app/assets/stylesheets/site/style.scss */
+.slider_section .detail-box .btn-box .btn-2:hover {
+  background-color: transparent;
+  color: #262626;
+}
+
+/* line 384, app/assets/stylesheets/site/style.scss */
+.slider_section .detail-box::before {
+  content: "";
+  position: absolute;
+  left: -41%;
+  top: 26px;
+  width: 30%;
+  height: 5px;
+  background-color: #10e276;
+}
+
+/* line 396, app/assets/stylesheets/site/style.scss */
+.slider_section #carouselExampleIndicators {
+  max-width: 400px;
+  padding: 75px 0 60px 0;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 25px;
+  box-shadow: 2px 10px 25px 0 rgba(0, 0, 0, 0.1);
+  height: 550px;
+  justify-content: space-between;
+  margin: auto;
+}
+
+/* line 410, app/assets/stylesheets/site/style.scss */
+.slider_section .img-box {
+  margin: 15px 20px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 417, app/assets/stylesheets/site/style.scss */
+.slider_section .img-box.b-1 {
+  margin-left: 20%;
+}
+
+/* line 421, app/assets/stylesheets/site/style.scss */
+.slider_section .img-box.b-4 {
+  margin-left: 5%;
+  margin-right: -10%;
+  transform: translateY(15px);
+}
+
+/* line 427, app/assets/stylesheets/site/style.scss */
+.slider_section .img-box img {
+  width: 100%;
+  max-height: 100%;
+}
+
+/* line 433, app/assets/stylesheets/site/style.scss */
+.slider_section .carousel_btn-box {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 438, app/assets/stylesheets/site/style.scss */
+.slider_section .carousel-control-prev,
+.slider_section .carousel-control-next {
+  position: unset;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-size: 28px;
+  top: unset;
+  bottom: 45px;
+  left: 50%;
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 454, app/assets/stylesheets/site/style.scss */
+.slider_section .carousel-control-prev {
+  background-image: url(/assets/prev-black.png);
+}
+
+/* line 457, app/assets/stylesheets/site/style.scss */
+.slider_section .carousel-control-prev:hover {
+  background-image: url(/assets/prev-grey.png);
+}
+
+/* line 462, app/assets/stylesheets/site/style.scss */
+.slider_section .carousel-control-next {
+  background-image: url(/assets/next-black.png);
+}
+
+/* line 465, app/assets/stylesheets/site/style.scss */
+.slider_section .carousel-control-next:hover {
+  background-image: url(/assets/next-grey.png);
+}
+
+/* line 470, app/assets/stylesheets/site/style.scss */
+.slider_section .carousel-indicators {
+  margin: 0;
+  position: unset;
+  font-family: 'American Typewriter', sans-serif;
+}
+
+/* line 475, app/assets/stylesheets/site/style.scss */
+.slider_section .carousel-indicators li {
+  margin: 0;
+  width: auto;
+  height: auto;
+  text-indent: 0;
+  opacity: 1;
+  color: #959494;
+  background-color: transparent;
+  display: none;
+}
+
+/* line 485, app/assets/stylesheets/site/style.scss */
+.slider_section .carousel-indicators li.active {
+  display: block;
+}
+
+/* line 498, app/assets/stylesheets/site/style.scss */
+.about_section .row {
+  align-items: center;
+}
+
+/* line 502, app/assets/stylesheets/site/style.scss */
+.about_section .detail-box {
+  padding-left: 10%;
+}
+
+/* line 505, app/assets/stylesheets/site/style.scss */
+.about_section .detail-box p {
+  margin-top: 20px;
+}
+
+/* line 509, app/assets/stylesheets/site/style.scss */
+.about_section .detail-box a {
+  display: inline-block;
+  padding: 8px 35px;
+  background-color: #262626;
+  color: #ffffff;
+  border: 1px solid #262626;
+  margin-top: 30px;
+}
+
+/* line 27, app/assets/stylesheets/site/style.scss */
+.about_section .detail-box a:hover {
+  background-color: transparent;
+  color: #262626;
+}
+
+/* line 516, app/assets/stylesheets/site/style.scss */
+.about_section .img-box img {
+  width: 100%;
+}
+
+/* line 529, app/assets/stylesheets/site/style.scss */
+.dish_section .row {
+  align-items: center;
+}
+
+/* line 533, app/assets/stylesheets/site/style.scss */
+.dish_section .dish_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 537, app/assets/stylesheets/site/style.scss */
+.dish_section .dish_container .box {
+  flex-basis: calc(50% - 20px);
+  margin: 10px;
+  border: 10px solid #f8f8f8;
+}
+
+/* line 542, app/assets/stylesheets/site/style.scss */
+.dish_section .dish_container .box img {
+  width: 100%;
+}
+
+/* line 546, app/assets/stylesheets/site/style.scss */
+.dish_section .dish_container .box:hover {
+  border: 10px solid #262626;
+}
+
+/* line 552, app/assets/stylesheets/site/style.scss */
+.dish_section .detail-box {
+  padding-left: 10%;
+  text-align: right;
+}
+
+/* line 556, app/assets/stylesheets/site/style.scss */
+.dish_section .detail-box .heading_container {
+  justify-content: flex-end;
+}
+
+/* line 560, app/assets/stylesheets/site/style.scss */
+.dish_section .detail-box p {
+  margin-top: 20px;
+}
+
+/* line 564, app/assets/stylesheets/site/style.scss */
+.dish_section .detail-box a {
+  display: inline-block;
+  padding: 8px 35px;
+  background-color: #262626;
+  color: #ffffff;
+  border: 1px solid #262626;
+  margin-top: 30px;
+}
+
+/* line 27, app/assets/stylesheets/site/style.scss */
+.dish_section .detail-box a:hover {
+  background-color: transparent;
+  color: #262626;
+}
+
+/* line 578, app/assets/stylesheets/site/style.scss */
+.hot_section .carousel_container {
+  border: 1px solid #c2c2c2;
+  padding: 45px 0 15px 0;
+  margin-top: 30px;
+  border-left: none;
+  border-right: none;
+}
+
+/* line 588, app/assets/stylesheets/site/style.scss */
+.hot_section .heading_container h2 {
+  margin-bottom: 0;
+}
+
+/* line 593, app/assets/stylesheets/site/style.scss */
+.hot_section .box {
+  text-align: center;
+}
+
+/* line 597, app/assets/stylesheets/site/style.scss */
+.hot_section .box .img-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 135px;
+}
+
+/* line 604, app/assets/stylesheets/site/style.scss */
+.hot_section .box .img-box img {
+  width: 75%;
+}
+
+/* line 610, app/assets/stylesheets/site/style.scss */
+.hot_section .box .detail-box {
+  margin-top: 35px;
+}
+
+/* line 613, app/assets/stylesheets/site/style.scss */
+.hot_section .box .detail-box p {
+  margin-top: 10px;
+}
+
+/* line 617, app/assets/stylesheets/site/style.scss */
+.hot_section .box .detail-box a {
+  display: inline-block;
+  padding: 7px 20px;
+  background-color: #262626;
+  color: #ffffff;
+  border: 1px solid #262626;
+  margin-top: 5px;
+}
+
+/* line 27, app/assets/stylesheets/site/style.scss */
+.hot_section .box .detail-box a:hover {
+  background-color: transparent;
+  color: #262626;
+}
+
+/* line 624, app/assets/stylesheets/site/style.scss */
+.hot_section .carousel-wrap {
+  margin: 0 auto;
+  padding: 0 5%;
+  position: relative;
+}
+
+/* line 631, app/assets/stylesheets/site/style.scss */
+.hot_section .owl-nav > div {
+  margin-top: -26px;
+  position: absolute;
+  top: 50%;
+  color: #cdcbcd;
+}
+
+/* line 638, app/assets/stylesheets/site/style.scss */
+.hot_section .owl-carousel .owl-nav .owl-prev,
+.hot_section .owl-carousel .owl-nav .owl-next {
+  width: 50px;
+  height: 50px;
+  background-color: #51b5ef;
+  background-size: 9px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  outline: none;
+}
+
+/* line 651, app/assets/stylesheets/site/style.scss */
+.hot_section .owl-carousel .owl-nav .owl-prev:hover,
+.hot_section .owl-carousel .owl-nav .owl-next:hover {
+  background-color: #252525;
+}
+
+/* line 656, app/assets/stylesheets/site/style.scss */
+.hot_section .owl-carousel .owl-nav .owl-prev {
+  background-image: url(/assets/left-angle.png);
+  left: -10%;
+}
+
+/* line 662, app/assets/stylesheets/site/style.scss */
+.hot_section .owl-carousel .owl-nav .owl-next {
+  right: -10%;
+  background-image: url(/assets/right-angle.png);
+}
+
+/* line 668, app/assets/stylesheets/site/style.scss */
+.hot_section .owl-carousel .owl-dots.disabled,
+.hot_section .owl-carousel .owl-nav.disabled {
+  display: block;
+}
+
+/* line 679, app/assets/stylesheets/site/style.scss */
+.app_section {
+  background-image: url(/assets/app-bg.jpg);
+  background-size: 100% 86%;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  background-position: bottom;
+}
+
+/* line 686, app/assets/stylesheets/site/style.scss */
+.app_section .row {
+  align-items: center;
+}
+
+/* line 691, app/assets/stylesheets/site/style.scss */
+.app_section .img-box img {
+  width: 100%;
+}
+
+/* line 696, app/assets/stylesheets/site/style.scss */
+.app_section .detail-box {
+  padding-top: 60px;
+}
+
+/* line 699, app/assets/stylesheets/site/style.scss */
+.app_section .detail-box h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+/* line 704, app/assets/stylesheets/site/style.scss */
+.app_section .detail-box h2 span {
+  font-size: 1.5em;
+}
+
+/* line 709, app/assets/stylesheets/site/style.scss */
+.app_section .detail-box p {
+  color: #ffffff;
+}
+
+/* line 713, app/assets/stylesheets/site/style.scss */
+.app_section .detail-box .btn-box {
+  margin-top: 35px;
+}
+
+/* line 716, app/assets/stylesheets/site/style.scss */
+.app_section .detail-box .btn-box a {
+  margin-right: 10px;
+}
+
+/* line 719, app/assets/stylesheets/site/style.scss */
+.app_section .detail-box .btn-box a img {
+  max-width: 100%;
+}
+
+/* line 732, app/assets/stylesheets/site/style.scss */
+.client_section .heading_container {
+  justify-content: flex-end;
+}
+
+/* line 736, app/assets/stylesheets/site/style.scss */
+.client_section .box {
+  width: 75%;
+  margin: 90px auto;
+}
+
+/* line 740, app/assets/stylesheets/site/style.scss */
+.client_section .box .client_id {
+  display: flex;
+  align-items: center;
+}
+
+/* line 744, app/assets/stylesheets/site/style.scss */
+.client_section .box .client_id h4 {
+  margin: 0;
+  margin-left: 15px;
+}
+
+/* line 750, app/assets/stylesheets/site/style.scss */
+.client_section .box .detail-box {
+  margin-top: 30px;
+}
+
+/* line 755, app/assets/stylesheets/site/style.scss */
+.client_section .carousel-indicators {
+  margin: 0;
+  justify-content: center;
+  bottom: -15px;
+}
+
+/* line 760, app/assets/stylesheets/site/style.scss */
+.client_section .carousel-indicators li {
+  margin: 0 3px;
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+  background-color: #51b5ef;
+  border-radius: 100%;
+}
+
+/* line 768, app/assets/stylesheets/site/style.scss */
+.client_section .carousel-indicators li.active {
+  background-color: #252525;
+}
+
+/* line 781, app/assets/stylesheets/site/style.scss */
+.contact_section h2 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 45px;
+}
+
+/* line 787, app/assets/stylesheets/site/style.scss */
+.contact_section .form_container {
+  padding: 0 45px;
+}
+
+/* line 790, app/assets/stylesheets/site/style.scss */
+.contact_section .form_container input {
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  border: none;
+  border-bottom: 1px solid #363535;
+  outline: none;
+}
+
+/* line 798, app/assets/stylesheets/site/style.scss */
+.contact_section .form_container input.message_input {
+  margin-top: 45px;
+}
+
+/* line 802, app/assets/stylesheets/site/style.scss */
+.contact_section .form_container input::-moz-placeholder {
+  color: rgba(35, 9, 9, 0.6);
+}
+.contact_section .form_container input::placeholder {
+  color: rgba(35, 9, 9, 0.6);
+}
+
+/* line 807, app/assets/stylesheets/site/style.scss */
+.contact_section .form_container button {
+  background-color: transparent;
+  border: 2px solid #51b5ef;
+  color: #51b5ef;
+  text-transform: uppercase;
+  padding: 6px 40px;
+  border-radius: 25px;
+  margin-top: 45px;
+}
+
+/* line 818, app/assets/stylesheets/site/style.scss */
+.contact_section .contact_box {
+  margin-top: 35px;
+}
+
+/* line 821, app/assets/stylesheets/site/style.scss */
+.contact_section .contact_box a {
+  display: flex;
+  align-items: center;
+  color: #363535;
+  margin: 15px 0;
+}
+
+/* line 827, app/assets/stylesheets/site/style.scss */
+.contact_section .contact_box a .img-box {
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+  border: 1px solid #363535;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+/* line 837, app/assets/stylesheets/site/style.scss */
+.contact_section .contact_box a .img-box img {
+  width: 100%;
+}
+
+/* line 849, app/assets/stylesheets/site/style.scss */
+.subscribe_section {
+  background-color: #2e2d2d;
+  padding: 25px 0;
+}
+
+/* line 854, app/assets/stylesheets/site/style.scss */
+.subscribe_section form label {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* line 862, app/assets/stylesheets/site/style.scss */
+.subscribe_section form .box {
+  display: flex;
+}
+
+/* line 865, app/assets/stylesheets/site/style.scss */
+.subscribe_section form .box input {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #ffffff;
+  outline: none;
+  color: #ffffff;
+}
+
+/* line 874, app/assets/stylesheets/site/style.scss */
+.subscribe_section form .box button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-left: -95px;
+}
+
+/* footer section*/
+/* line 891, app/assets/stylesheets/site/style.scss */
+.footer_section {
+  padding: 20px;
+  background-color: #252525;
+}
+
+/* line 895, app/assets/stylesheets/site/style.scss */
+.footer_section .social_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px 0;
+}
+
+/* line 901, app/assets/stylesheets/site/style.scss */
+.footer_section .social_container h4 {
+  color: #a9a6a6;
+  font-weight: bold;
+}
+
+/* line 906, app/assets/stylesheets/site/style.scss */
+.footer_section .social_container .social_box {
+  display: flex;
+}
+
+/* line 909, app/assets/stylesheets/site/style.scss */
+.footer_section .social_container .social_box a {
+  margin: 0 10px;
+}
+
+/* line 912, app/assets/stylesheets/site/style.scss */
+.footer_section .social_container .social_box a img {
+  max-width: 100%;
+}
+
+/* line 921, app/assets/stylesheets/site/style.scss */
+.footer_section p {
+  margin: 0;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* line 928, app/assets/stylesheets/site/style.scss */
+.footer_section a {
+  color: #ffffff;
+}
