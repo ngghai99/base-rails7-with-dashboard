@@ -1,1 +1,1 @@
-WIP: The project base used to clone project use dashboard
+WIP: The project base used to clone some project use dashboard
